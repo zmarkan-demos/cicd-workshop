@@ -1,0 +1,11 @@
+name: Update Gitpod URL
+on: 
+  fork
+jobs: 
+  update_gitpod_url:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          git remote -v
+          git branch 
